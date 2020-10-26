@@ -4,22 +4,25 @@ import {
   Route, 
   Switch,
 } from 'react-router-dom';
-import ListPage from './list/ListPage';
+import ListPage from './containers/ListPage';
+import DetailPage from './containers/DetailPage'
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <Router>
-          <Switch>
-            <Route 
-              path="/" 
-              exact
-              render={(routerProps) => <ListPage {...routerProps} />} 
-            />
-          </Switch>
-        </Router>
-      </div>
-    );
-  }
+export default function App() {
+  return (
+    <div>
+      <Router>
+        <Switch>
+          <Route 
+            path="/" 
+            exact
+            component={ListPage} />
+          <Route 
+            path="/:characterName" 
+            exact
+            component={DetailPage}
+          />
+        </Switch>
+      </Router>
+    </div>
+  );
 }
