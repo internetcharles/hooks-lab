@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListPage renders ListPage 1`] = `
+<DocumentFragment>
+  <ul
+    data-testid="list"
+  >
+    <li>
+      <figure>
+        <h1>
+          John
+        </h1>
+        <h3>
+          Guy
+        </h3>
+        <h3>
+          Status: Alive
+        </h3>
+      </figure>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
