@@ -15,7 +15,7 @@ describe('DetailPage component', () => {
       }
     ]);
 
-    render(<DetailPage />)
+    render(<DetailPage match={{params: 1}} />)
 
     const characterDetail = await screen.findByTestId('detail');
 
