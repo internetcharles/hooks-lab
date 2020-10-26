@@ -8,8 +8,8 @@ describe('ListPage', () => {
       characters={[
         { 
           name: "John",
+          image: "John.jpg",
           occupation: "Guy",
-          status: "Alive"
         }
       ]}  
     />);

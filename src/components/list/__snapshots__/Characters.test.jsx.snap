@@ -10,6 +10,9 @@ exports[`ListPage renders ListPage 1`] = `
         <h1>
           John
         </h1>
+        <img
+          alt="John"
+        />
         <h3>
           Guy
         </h3>

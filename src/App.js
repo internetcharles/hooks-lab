@@ -4,7 +4,7 @@ import {
   Route, 
   Switch,
 } from 'react-router-dom';
-import ListPage from './list/ListPage';
+import ListPage from './containers/ListPage';
 
 export default class App extends Component {
   render() {
