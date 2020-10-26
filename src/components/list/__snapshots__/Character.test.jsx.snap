@@ -13,9 +13,6 @@ exports[`Character component renders a character 1`] = `
     <h3>
       Farmer
     </h3>
-    <h3>
-      Status: Dead
-    </h3>
   </figure>
 </DocumentFragment>
 `;

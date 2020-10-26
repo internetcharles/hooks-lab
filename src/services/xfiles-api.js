@@ -5,6 +5,15 @@ export const getCharacters = () => {
       name: character.name,
       image: character.image,
       occupation: character.occupation,
-      status: character.status
+    })));
+};
+
+export const getCharacterDetails = (name) => {
+  return fetch(`https://xfiles-api.herokuapp.com/api/v1/characters/${name}`)
+    .then(res => res.json())
+    .then(json => json.map(character => ({
+      name: character.name,
+      image: character.image,
+      description: character.description,
     })));
 };

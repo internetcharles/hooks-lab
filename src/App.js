@@ -5,6 +5,7 @@ import {
   Switch,
 } from 'react-router-dom';
 import ListPage from './containers/ListPage';
+import DetailPage from './containers/DetailPage'
 
 export default class App extends Component {
   render() {
@@ -15,7 +16,11 @@ export default class App extends Component {
             <Route 
               path="/" 
               exact
-              render={(routerProps) => <ListPage {...routerProps} />} 
+              component={ListPage} />
+            <Route 
+              path="/:characterName" 
+              exact
+              component={DetailPage}
             />
           </Switch>
         </Router>

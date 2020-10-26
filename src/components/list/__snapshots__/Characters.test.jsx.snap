@@ -6,20 +6,22 @@ exports[`ListPage renders ListPage 1`] = `
     data-testid="list"
   >
     <li>
-      <figure>
-        <h1>
-          John
-        </h1>
-        <img
-          alt="John"
-        />
-        <h3>
-          Guy
-        </h3>
-        <h3>
-          Status: Alive
-        </h3>
-      </figure>
+      <a
+        href="/John"
+      >
+        <figure>
+          <h1>
+            John
+          </h1>
+          <img
+            alt="John"
+            src="John.jpg"
+          />
+          <h3>
+            Guy
+          </h3>
+        </figure>
+      </a>
     </li>
   </ul>
 </DocumentFragment>

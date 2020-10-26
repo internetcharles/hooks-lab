@@ -5,12 +5,14 @@ import Character from './Character';
 const Characters = ({ characters }) => {
   const characterElements = characters.map(character => (
     <li key={character.name}>
-      <Character {...character} />
+      <a key={character.name} href={`/${character.name}`}>
+        <Character {...character} />
+      </a>
     </li>
   ));
 
   return (
-    <ul data-testid="list">
+    <ul data-testid='list'>
       {characterElements}
     </ul>
   );
